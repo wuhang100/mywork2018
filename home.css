@@ -1,0 +1,231 @@
+/* 
+	Global classes 
+					*/
+
+body {
+	background-image: url("picture/background.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+        opacity: 0.4;
+}
+
+
+a:link,a:visited{
+ text-decoration:none; 
+}
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+}
+
+.head-bar {
+	height: 45px;
+	width: 300px;
+	background-color:#00ccff;
+	margin-bottom: 20px;
+}
+
+.head-title {
+	text-align:center;
+	color:white;
+	text-shadow:1px 1px 1px #000;
+}
+
+/* 
+	Albums 
+			*/
+
+			
+.albums-album-wrapper {  /* This defines a div that wraps album art, name and artist name of each song */
+	float:left;
+	width:140px;
+	height:215px;
+	margin:5px;
+}
+
+.albums-album-art {    /* This defines size of the wrapper picture. */
+	width:140;
+	height:140;
+}
+
+.albums-album-name {
+	margin-top:10px;
+	text-align:center;
+    font-weight:bold;
+	font-size:115%
+}
+
+.albums-artist-name {
+    margin-top:5px;
+	text-align:center;
+    font-style:oblique;
+	font-size:95%
+}
+
+/* 
+	Songs 
+			*/
+.songs-info-wrapper {  /* This defines a div that wraps album art, name and artist name of each song */
+ 	float:left;
+	width:300px;
+	height:215px;
+	margin:10px;
+	position:relative;
+    top:-20px;
+}
+
+.songs-album-art {
+	float:left;
+	width:150;
+	height:150;
+}
+
+.songs-album-name {
+	float:left;
+	margin-left:20px;
+	margin-top:15px;
+    font-weight:bold;
+	font-size:160%
+}
+
+.songs-artist-name {
+	float:left;
+	margin-left:20px;
+	margin-top:20px;
+	font-size:100%;
+	font-style:oblique
+}
+
+.songs-text-info {
+	border:1px solid green;
+	text-indent:5px;
+	margin-top:6px;
+	font-size:110%;
+}
+
+.songs-album-year {
+	float:left;
+	margin-left:20px;
+	margin-top:20px;
+	font-size:100%;
+}
+
+.songs-list {
+	clear: left;
+	position:relative;
+    top:-80px;
+	margin-right:20px;
+}
+
+.back-button {
+	width:40;
+	height:25;
+	float:left;
+	margin:7px;
+	background-color:#99CCCC;
+	text-align:center;
+	border:2px solid #FFFFFF;
+}
+
+/* 
+	Player 
+			*/
+.player-album-art {
+	width:220;
+	height:220;
+	position:relative;
+	margin-left:40px;
+}
+
+.player-song-info {
+	text-align:center;
+	color:blue;
+	position:relative;
+	top:-30px;	
+	font-size:130%;
+}
+
+#player-song-name {
+	text-align:center;
+	color:red;
+	font-size:130%;	
+	font-weight:bold;
+	position:relative;
+	top:-12px;	
+}
+
+.volume-bar {      /* This is the "trumpet" figue in the left-side */
+	width:300px;
+	height:10px;
+	position:relative;
+	top:-25px;	
+	margin-left:20px;
+}
+
+.volume-level {    /* This defines six volume levels */
+	float:left;
+	width:28px;
+	height:8px;
+	border:1px solid black;
+	margin-right:8px;
+	position:relative;
+	bottom:27px;
+	left:55px;
+}
+
+.volume-rocker {    /* This is the button that change the volume */
+    float:left;
+    background:white;
+	text-align:center;
+	width:100px;
+	height:20px;
+	margin-left:25px;
+	margin-right:25px;	
+	font-weight:bold;
+	border-radius:7px
+}
+
+#player-time {
+	width:240px;
+	height:25px;
+	text-align:center;
+	margin-left:30px;
+	position:relative;
+	top:-50px;	
+}
+
+#time-elapsed {
+	position:relative;
+	top:-50px;	
+	float:left;
+	margin-left:15px;
+	font-size:90%
+}
+
+#time-total{
+	position:relative;
+	top:-50px;	
+	float:right;
+	margin-right:15px;
+	font-size:90%
+}
+
+.player-buttons{
+	width:40px;
+	height:30px;
+	text-align:center;
+	margin:2px;	
+	position:relative;
+    left:35px;
+	top:-40px;	
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: radio;
+}
+
+button{
+outline:none;
+}
